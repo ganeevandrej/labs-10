@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+int main()
+{
+	int A, a, b, c, d;
+	scanf_s("%d", &A);
+	a = A % 10;
+	b = A / 10 % 10;
+	c = A / 100 % 10;
+	d = A / 1000;
+	if ((a == d) && (b == c))
+		printf("true");
+	else
+		printf("false");
+	return 0;
+}
